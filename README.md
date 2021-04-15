@@ -1,7 +1,8 @@
 ###CentOS 安装 docker
 
 #centos8.2以下的如果部署不成功，先重置服务器，再升级一下内核就可以了
-#升级内核
+
+#升级内核命令
 ```
 sudo yum update
 ```
