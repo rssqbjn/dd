@@ -1,12 +1,12 @@
 ###CentOS 安装 docker
 
-#centos8.2以下的如果部署不成功，先重置服务器，再升级一下内核就可以了
+##centos8.2以下的如果部署不成功，先重置服务器，再升级一下内核就可以了
 
 #升级内核命令
 ```
 sudo yum update
 ```
-#安装依赖
+##安装依赖
 ```
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 
@@ -14,21 +14,21 @@ wget -O /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/centos
 
 sudo sed -i 's+download.docker.com+mirrors.tuna.tsinghua.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
 ```
-#安装
+##安装
 ```
 sudo yum makecache fast
 
 sudo yum install docker-ce
 ```
-#启动并加入开机启动
+##启动并加入开机启动
 ```
 sudo systemctl start docker
 
 sudo systemctl enable docker
 ```
-#换源
+##换源
 
-腾讯云用腾讯云的
+#腾讯云用腾讯云的
 ```
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
@@ -37,7 +37,7 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 }
 EOF
 ```
-阿里云服务器 用网易的加速器
+#阿里云服务器 用网易的加速器
 ```
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
@@ -109,7 +109,7 @@ docker run -dit \
 
 ##多容器配置
 
-##要想换库直接改最后一行
+#要想换库直接改最后一行
 ```
 docker run -dit \
     -v /你想保存的目录/jd1/config:/jd/config `# 配置保存目录，冒号左边请修改为你想存放的路径`\
@@ -135,11 +135,11 @@ docker run -d \
 ```
 ##手动更新
 
-青龙更新命令
+#青龙更新命令
 ```
 docker exec -it qinglong bash git_pull
 ```
-v4更新命令
+#v4更新命令
 ```
 docker exec -it jd bash jup
 ```
