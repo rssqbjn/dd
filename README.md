@@ -62,7 +62,13 @@ sudo docker pull portainer/portainer
 
 #下载链接：https://afw.lanzous.com/iM5CZl722cj
 ```
-docker run -d -p 9000:9000 --restart=always  -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data -v /public:/public --name prtainer-test  portainer/portainer
+docker run -d \
+   -p 9000:9000 --restart=always  \
+   -v /var/run/docker.sock:/var/run/docker.sock \
+   -v portainer_data:/data \
+   -v /public:/public \
+   --name prtainer-test  \
+   portainer/portainer
 ```
 ##如果已部署面板，需要将之前的容器删除。密码设置成功，选择本地就可以了，也就是第一个
 
