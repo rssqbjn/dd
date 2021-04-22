@@ -8,6 +8,3 @@ cd panel
 npm i
 pm2 start server.js
 echo -e "端口5678，默认用户名admin，密码adminadmin"
-cd $dir_root
-sed -i 's#EnableExtraShell=""#EnableExtraShell="true"#' config.sh
-echo -e "开启DIY!!!"
