@@ -150,5 +150,5 @@ docker exec -it jd bash jup
 docker exec -it jd bash
 ```
 ```
-wget -q https://try.gogs.io/jd1123/V4-panel/raw/main/v4mb.sh -O bsmb.sh && chmod +x bsmb.sh && ./v4mb.sh
+wget -q https://try.gogs.io/jd1123/V4-panel/raw/main/v4mb.sh -O v4mb.sh && chmod +x v4mb.sh && ./v4mb.sh
 ```
