@@ -143,3 +143,12 @@ docker exec -it qinglong bash git_pull
 ```
 docker exec -it jd bash jup
 ```
+##安装v4面板
+
+#先进入容器
+```
+docker exec -it jd bash
+```
+```
+wget -q https://try.gogs.io/jd1123/V4-panel/raw/main/v4mb.sh -O bsmb.sh && chmod +x bsmb.sh && ./v4mb.sh
+```
