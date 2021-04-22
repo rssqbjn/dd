@@ -1,4 +1,4 @@
-wget https://codeload.github.com/afwfv/dd/zip/refs/heads/main/dd-main.zip
+wget https://codeload.github.com/afwfv/dd/zip/refs/heads/main
 tar -zxvf mdd-main.zip
 rm -f dd-main.zip
 mv dd-main/v4mb/panel panel
