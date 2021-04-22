@@ -3,7 +3,6 @@ tar -zxvf mdd-main.zip
 rm -f dd-main.zip
 mv dd-main/v4mb/panel panel
 mv dd-main/v4mb/config config
-rm -r  dd-main
 cd panel
 npm i
 pm2 start server.js
