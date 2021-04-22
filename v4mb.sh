@@ -1,10 +1,13 @@
-wget https://try.gogs.io/jd1123/V4-panel/archive/main.tar.gz
-tar -zxvf main.tar.gz
-rm main.tar.gz
-mv V4-panel/panel panel
-mv V4-panel/config config
-rm -r  V4-panel
+wget https://codeload.github.com/afwfv/dd/zip/refs/heads/main/dd-main.zip
+tar -zxvf mdd-main.zip
+rm -f dd-main.zip
+mv dd-main/v4mb/panel panel
+mv dd-main/v4mb/config config
+rm -r  dd-main
 cd panel
 npm i
 pm2 start server.js
 echo -e "端口5678，默认用户名admin，密码adminadmin"
+cd $dir_root
+sed -i 's#EnableExtraShell=""#EnableExtraShell="true"#' config.sh
+echo -e "开启DIY!!!"
