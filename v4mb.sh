@@ -1,8 +1,8 @@
-wget https://codeload.github.com/afwfv/dd/zip/refs/heads/main
-tar -zxvf mdd-main.zip
-rm -f dd-main.zip
-mv dd-main/v4mb/panel panel
-mv dd-main/v4mb/config config
+wget https://ghproxy.com/https://raw.githubusercontent.com/afwfv/dd/main/v4mb.tar.gz
+tar -zxvf v4mb.tar.gz
+rm -f v4mb.tar.gz
+mv v4mb/panel panel
+mv v4mb/config config
 cd panel
 npm i
 pm2 start server.js
