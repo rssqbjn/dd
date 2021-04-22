@@ -1,9 +1,8 @@
-wget https://try.gogs.io/jd1123/V4-panel/archive/main.tar.gz
-tar -zxvf main.tar.gz
-rm main.tar.gz
-mv V4-panel/panel panel
-mv V4-panel/config config
-rm -r  V4-panel
+wget https://codeload.github.com/afwfv/dd/zip/refs/heads/main
+tar -zxvf mdd-main.zip
+rm -f dd-main.zip
+mv dd-main/v4mb/panel panel
+mv dd-main/v4mb/config config
 cd panel
 npm i
 pm2 start server.js
